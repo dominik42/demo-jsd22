@@ -13,6 +13,9 @@ import com.vaadin.flow.theme.lumo.LumoUtility;
 import de.hub28.jsd22.components.appnav.AppNav;
 import de.hub28.jsd22.components.appnav.AppNavItem;
 import de.hub28.jsd22.views.about.AboutView;
+import de.hub28.jsd22.views.actor.ActorCrudView;
+import de.hub28.jsd22.views.actor.ActorListView;
+import de.hub28.jsd22.views.film.FilmListView;
 import de.hub28.jsd22.views.helloworld.HelloWorldView;
 
 /**
@@ -55,6 +58,9 @@ public class MainLayout extends AppLayout {
 
         nav.addItem(new AppNavItem("Hello World", HelloWorldView.class, "la la-globe"));
         nav.addItem(new AppNavItem("About", AboutView.class, "la la-file"));
+        nav.addItem(new AppNavItem("Actors", ActorListView.class));
+        nav.addItem(new AppNavItem("Actor CRUD", ActorCrudView.class));
+        nav.addItem(new AppNavItem("Films", FilmListView.class));
 
         return nav;
     }
